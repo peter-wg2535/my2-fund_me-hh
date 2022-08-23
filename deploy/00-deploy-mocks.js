@@ -3,7 +3,7 @@ const { developmentChains } = require("../helper-hardhat-config")
 
 const DECIMALS = "8"
 const INITIAL_PRICE = "200000000000" // 2000
-
+//npx  hardhat deploy --tags  mocks --network ganache 
 module.exports = async ({ getNamedAccounts, deployments }) => {
 
     const { deploy, log } = deployments

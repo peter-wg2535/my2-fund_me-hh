@@ -1,5 +1,5 @@
 const { ethers, getNamedAccounts } = require("hardhat")
-
+//npx  hardhat run  scripts\mywithdraw.js  --network ganache 
 async function main() {
   const { deployer } = await getNamedAccounts()
   const fundMe = await ethers.getContract("FundMe", deployer)

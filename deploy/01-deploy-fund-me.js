@@ -2,7 +2,7 @@ const { network } = require("hardhat")
 
 const { networkConfig,developmentChains }=require("../helper-hardhat-config")
 const {  verify } =require("../utils/verify")
-
+//npx  hardhat deploy --tags  fundme --network ganache 
 module.exports=async ({getNamedAccounts, deployments })=>{
     const { deploy, log } = deployments
     const { deployer } = await getNamedAccounts()

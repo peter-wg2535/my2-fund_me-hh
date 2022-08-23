@@ -2,6 +2,9 @@ const networkConfig = {
   31337: {
     name: "localhost",
   },
+  1337: {
+    name: "ganache",
+  },
   // Price Feed Address, values can be obtained at https://docs.chain.link/docs/reference-contracts
   //https://docs.chain.link/docs/ethereum-addresses/
   // Default one is ETH/USD contract on Kovan
@@ -25,7 +28,7 @@ const networkConfig = {
 
 }
 
-const developmentChains = ["hardhat", "localhost"]
+const developmentChains = ["hardhat", "localhost","ganache"]
 
 module.exports = {
   networkConfig,
